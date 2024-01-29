@@ -7,20 +7,28 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './common/components/footer/footer.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeComponent } from './components/home/home.component';
+import { CardModule } from 'primeng/card';
+import { AccordionModule } from 'primeng/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    SignInComponent
+    HomeComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     ButtonModule,
     InputTextModule,
-    FormsModule
+    FormsModule,
+    CardModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
