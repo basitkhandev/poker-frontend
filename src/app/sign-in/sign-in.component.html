@@ -1,1 +1,90 @@
-<p>sign-in works!</p>
+<div class="background-container pb-8">
+	<img src="../assets/main.svg"
+		alt="Background Image"
+		class="background-image">
+	<div class="button-container">
+		<div class="flex justify-content-between align-items-center">
+
+			<div>
+				<div>
+					<img class="pl-5"
+						src="../assets/left-main.png"
+						alt="Image">
+				</div>
+			</div>
+
+			<div>
+				<div class="flex justify-content-center">
+					<div style="padding-right: 100px;">
+						<button class="button"
+							class="main-btn">
+							Find a Coach
+						</button>
+					</div>
+					<div>
+						<button class="button"
+							class="main-btn">
+							Become a member
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex justify-content-center mt-8">
+			<div style="max-width: 723px;" class="">
+				<p-card [style]="{ width: '597px' , background:'#0F1B21'}">
+
+					<div class="flex justify-content-center">
+						<h1 style="color: white;">Sign In</h1>
+					</div>
+
+					<div class="p-4 flex flex-column gap-3">
+						<div class="flex flex-column gap-2">
+							<label for="username"
+								style="color: white;">
+								Email
+							</label>
+							<input pInputText
+								id="username"
+								aria-describedby="username-help">
+
+						</div>
+						<div class="flex flex-column gap-2">
+							<label for="username"
+								style="color: white;">
+								Password
+							</label>
+							<!-- <p-password  [toggleMask]="true"></p-password> -->
+							<input pInputText
+								id="username"
+								type="password"
+								aria-describedby="username-help">
+						</div>
+						<button class="button"
+							class="main-btn mt-3">
+							Log in
+						</button>
+                        <div class="">
+                            <div>
+                                <p>By proceeding, you are agreeing to our Terms of Service and Privacy Policy.</p>
+                            </div>
+    
+                            <div>
+                                Don’t have an account?Sign up
+                            </div>
+    
+                        </div>
+            
+					</div>
+
+				</p-card>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="">
+	<app-footer></app-footer>
+</div>

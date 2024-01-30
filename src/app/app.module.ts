@@ -12,13 +12,17 @@ import { HomeComponent } from './components/home/home.component';
 import { CardModule } from 'primeng/card';
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { PasswordModule } from 'primeng/password';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     InputTextModule,
     FormsModule,
     CardModule,
-    AccordionModule
+    AccordionModule,
+    PasswordModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
