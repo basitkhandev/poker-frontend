@@ -14,6 +14,13 @@ import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { PasswordModule } from 'primeng/password';
+import { LogoutComponentComponent } from './components/logout-component/logout-component.component';
+import { FindTutorComponent } from './components/find-tutor/find-tutor.component';
+import { RatingModule } from 'primeng/rating';
+import { CoachesComponent } from './coaches/coaches.component';
+import { StudentNewComponent } from './components/student-new/student-new.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { CoachProfileComponent } from './components/coach-profile/coach-profile.component';
 
 
 @NgModule({
@@ -22,7 +29,13 @@ import { PasswordModule } from 'primeng/password';
     FooterComponent,
     HomeComponent,
     AboutUsComponent,
-    SignInComponent
+    SignInComponent,
+    LogoutComponentComponent,
+    FindTutorComponent,
+    CoachesComponent,
+    StudentNewComponent,
+    ChatComponent,
+    CoachProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +46,8 @@ import { PasswordModule } from 'primeng/password';
     FormsModule,
     CardModule,
     AccordionModule,
-    PasswordModule
-    
+    PasswordModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

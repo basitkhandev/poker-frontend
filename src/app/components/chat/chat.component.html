@@ -1,0 +1,140 @@
+<div class="background-container pb-8"
+	style="background: rgb(160, 206, 230
+);">
+
+	<div class="button-container">
+		<div class="flex justify-content-between align-items-center">
+
+			<div>
+				<div>
+					<img class="pl-5"
+						src="../assets/left-main.png"
+						alt="Image">
+				</div>
+			</div>
+
+			<div>
+				<div class="flex justify-content-between align-items-center gap-4">
+					<a href
+						style="text-decoration: none; width: 118px; color: black;"
+						class="text-center">
+						Coach dashboard
+					</a>
+					<a href
+						class="text-center"
+						style="text-decoration: none;  width: 118px; color: black;">
+						Student dashboard
+					</a>
+					<i class="pi pi-envelope"></i>
+					<i class="pi pi-cog"></i>
+					<img src="../assets/card-align-pic.png"
+						style="width: 104px;
+                    height: 104px;
+                    border-radius: 50%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="flex gap-2 mt-7">
+
+			<div class="col-4"
+				style="background: rgb(143, 184, 206); border-radius: 10px; ">
+
+				<p-accordion [activeIndex]="0">
+					<p-accordionTab header="All messages">
+
+						<div class="flex justify-content-between p-5"
+							style="background: rgb(110, 145, 163); border-radius: 10px;">
+
+							<div style="position: relative;">
+								<img src="../assets/card-align-pic.png"
+									style="width: 40px;
+                    height: 40px;
+                    border-radius: 50%;">
+								<div style="width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    top: 30px;
+                    right: 3px;
+                    position: absolute;
+                    background: green;"></div>
+							</div>
+
+							<div class="flex flex-column">
+								<div>
+									<b>Lorem ipsum</b>
+								</div>
+								<div>
+									Lorem ipsum: sit am...
+								</div>
+							</div>
+							<div>Lorem ipsum</div>
+
+						</div>
+					</p-accordionTab>
+
+				</p-accordion>
+
+			</div>
+
+			<div class="col-8"
+				style="background: rgb(143, 184, 206); border-radius: 10px; ">
+				<div>
+					<div class="flex gap-2 align-items-center">
+						<div style="height: 20px;
+            width: 20px;
+            background: #3CC68A;
+            border-radius: 50%;"></div>
+						<h1>Lorem ipsum</h1>
+					</div>
+
+					<div class="pl-5"
+						style="margin-top: -20px;">
+						Lorem ipsum: 3 hours ago | Local time: 27 Dec 2023 at 13:50
+					</div>
+				</div>
+
+				<div style="border: 1px solid black;"
+					class="m-5"></div>
+
+				<div class="pl-4">
+
+					<div class="flex gap-2 align-items-center">
+						<img src="../assets/card-align-pic.png"
+							style="width: 40px;
+        height: 40px;
+        border-radius: 50%;">
+
+						<h5>Lorem ipsum</h5>
+						<div>
+							27 Dec 2023 at 12:37
+						</div>
+					</div>
+
+					<div class="col-7 pl-6">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-12 pl-4 pr-4">
+					<input pInputText
+						id="username"
+						placeholder="Send message..."
+						aria-describedby="username-help">
+				</div>
+                <div>
+                    <a href="" class="flex justify-content-end pr-5 mt-3 pb-5" style="text-decoration: none; color: black;"> Send</a>
+                </div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div>
+	<app-footer></app-footer>
+</div>

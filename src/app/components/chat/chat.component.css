@@ -1,0 +1,27 @@
+:host::ng-deep {
+    .p-accordion .p-accordion-header .p-accordion-header-link {
+         border: none;
+         color: #333333; 
+         background: none;
+      
+    }
+    .p-inputtext {
+        width: 100%;
+        height: 72px;
+        border-radius: 7.92px;
+        background: rgb(78, 104, 119);
+        color: black;
+    }
+
+    .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+        transform: translate(170px, 0px);
+    }
+    .p-accordion .p-accordion-content {
+        background: none;
+        border: none;
+    }
+
+    .p-accordion-header-text {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,43 @@
+.search-btn {
+    border: 2px solid black;
+    background: none;
+}
+.sign-in-btn {
+    background-color: rgb(179, 216, 235);
+}
+
+
+:host::ng-deep {
+    .p-inputtext {
+        width: 100%;
+        background: rgb(226, 240, 247);
+        border-radius: 8.4px;
+    }
+    .p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+        color: #DDB44B;
+    }
+    .p-button.p-button-icon-only {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #FF4D4D;
+    }
+    .search-icon {
+        .pi {
+            color: black;
+        }
+    }
+}
+
+.main-btn {
+width: 100%;
+}
+
+.set-profile-btn {
+    background-color: #FF4D4D;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    border-radius: 6px;
+}

@@ -33,3 +33,15 @@
     color: #000000;
     border-radius: 6px;
   }
+
+  :host::ng-deep {
+    .p-inputtext {
+        background: rgb(184, 188, 188);
+        border-radius: 8.4px;
+        height: 76px;
+    }
+}
+
+.sign-in-btn {
+    background-color: rgb(179, 216, 235);
+}
