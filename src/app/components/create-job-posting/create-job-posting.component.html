@@ -1,0 +1,278 @@
+<div class="background-container pb-8"
+	style="background: rgb(160, 206, 230
+);">
+
+	<div class="button-container">
+		<div class="flex justify-content-between align-items-center">
+
+			<div>
+				<div>
+					<img class="pl-5"
+						src="../assets/left-main.png"
+						alt="Image">
+				</div>
+			</div>
+
+			<div>
+				<div class="flex justify-content-between align-items-center gap-4">
+
+					<i class="pi pi-envelope"></i>
+					<i class="pi pi-cog"></i>
+					<img src="../assets/card-align-pic.png"
+						style="width: 104px;
+                    height: 104px;
+                    border-radius: 50%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="p-5">
+			<div class="text-3xl font-medium">Set your hours</div>
+			<div class="flex align-items-center p-6 mt-2"
+				style="background-color: rgb(143, 184, 206); border-radius: 10px;">
+				<div class="col-3">Hours</div>
+				<div class="col-3">
+					<p-dropdown [options]="cities"
+						optionLabel="name"
+						placeholder="Select a City"></p-dropdown>
+				</div>
+				<div class="col-3">
+					<p-dropdown [options]="cities"
+						optionLabel="name"
+						placeholder="Select a City"></p-dropdown>
+				</div>
+			</div>
+		</div>
+
+		<div class="p-5">
+			<div class="text-3xl font-medium">
+				Give a description about yourself
+			</div>
+			<div class=" pt-6 pl-2 mt-2"
+				style="background-color: rgb(143, 184, 206); border-radius: 10px;">
+				<div class="flex">
+
+					<div class="flex flex-column col-3 gap-2 mt-6">
+
+						<div class="font-bold text-xl col-12">Set description</div>
+						<div class="col-11">
+							Talk about your poker history, experience, and what you can bring to the table
+						</div>
+
+					</div>
+
+					<div class="col-9 textarea">
+						<textarea rows="20"
+							placeholder="Enter here..."
+							pInputTextarea></textarea>
+					</div>
+				</div>
+
+				<div class="flex mt-4 pb-6">
+					<div class="col-3">
+						<div class="text-2xl font-bold">Add Keywords</div>
+						<div class="mt-2">
+							May enter up to six keywords.
+						</div>
+					</div>
+
+					<div class="col-9">
+						<div class="text-xl font-bold">Lorem ipsum:</div>
+						<div class="grid mt-2">
+
+							<div class="col-3">
+								<div class="flex flex-column gap-2">
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+								</div>
+							</div>
+
+							<div class="col-3">
+								<div class="flex flex-column gap-2">
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="flex flex-column gap-2">
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="flex flex-column gap-2">
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+									<p-tag value="Lorem ipsum"></p-tag>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="p-5">
+			<div class="text-3xl font-medium">
+				Additional information
+			</div>
+			<div class="p-6 mt-2"
+				style="background-color: rgb(143, 184, 206); border-radius: 10px;">
+
+				<div class="flex mt-4">
+					<div class="text-xl font-medium col-2">Lorem ipsum</div>
+
+					<div class="flex gap-2">
+						<div>
+							<p-tag value="No Limit Holdem"></p-tag>
+						</div>
+						<div>
+							<p-tag value="Limit Holdem"></p-tag>
+						</div>
+						<div>
+							<p-tag value="Pot Limit Omaha"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+
+					</div>
+				</div>
+
+				<div style="border: 1px solid black; margin-top: 20px;"></div>
+
+				<div class="flex mt-4">
+					<div class="text-xl font-medium col-2">Type</div>
+
+					<div class="flex gap-2">
+						<div>
+							<p-tag value="No Limit Holdem"></p-tag>
+						</div>
+						<div>
+							<p-tag value="Limit Holdem"></p-tag>
+						</div>
+						<div>
+							<p-tag value="Pot Limit Omaha"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+
+					</div>
+				</div>
+
+				<div style="border: 1px solid black; margin-top: 20px;"></div>
+
+				<div class="flex mt-4">
+					<div class="text-xl font-medium col-2">Stakes</div>
+
+					<div class="flex gap-2">
+						<div>
+							<p-tag value="No Limit Holdem"></p-tag>
+						</div>
+						<div>
+							<p-tag value="Limit Holdem"></p-tag>
+						</div>
+						<div>
+							<p-tag value="Pot Limit Omaha"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+						<div>
+							<p-tag value="PLO 5"></p-tag>
+						</div>
+
+					</div>
+				</div>
+
+				<div style="border: 1px solid black; margin-top: 20px;"></div>
+
+				<div class="flex mt-4">
+					<div class="text-xl font-medium col-2">Stakes</div>
+
+					<div class="flex ">
+						<i class="pi pi-download"></i>
+					</div>
+				</div>
+				<div class="pb-6">
+					<div style="border: 1px solid black; margin-top: 20px;"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="p-5">
+			<div class="text-3xl font-medium">
+				Add your FAQ section
+			</div>
+			<div class="p-6 mt-2"
+				style="background-color: rgb(143, 184, 206); border-radius: 10px;">
+				<div class="flex justify-content-between align-items-center">
+					<div class="text-xl">
+						Frequently asked questions
+					</div>
+					<div>
+						<a href
+							style="text-decoration: none; color: #FF4D4D;">
+							+Add Extra
+						</a>
+					</div>
+				</div>
+
+				<div class="mt-4">
+					Lorem ipsum dolor sit
+				</div>
+				<div class="mt-4">
+					<a href
+						style="text-decoration: none; color: #FF4D4D;">
+						+Add Extra
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="flex justify-content-center mt-5">
+			<button class="button"
+				class="main-btn">
+				Finish
+			</button>
+		</div>
+
+	</div>
+</div>
+
+<div class>
+	<app-footer></app-footer>
+</div>

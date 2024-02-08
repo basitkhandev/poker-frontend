@@ -1,5 +1,93 @@
-:host:ng-deep {
-    p-card {
+:host::ng-deep {
+    .p-card {
         border-radius: 10px;
+        background: rgb(143, 184,206) !important;
+    }
+    .p-card .p-card-body {
+        background: rgb(143, 184,206) !important;
+    }
+
+
+    .p-accordion-header-text {
+        color: #FF4D4D;
+        font-weight: 400;
+    }
+    
+    
+    .p-accordion .p-accordion-header .p-accordion-header-link {
+        background: none;
+    }
+    
+    .p-accordion .p-accordion-header .p-accordion-header-link {
+        border-bottom: 1px solid;
+        padding: 0.857rem 1rem;
+        color: #333333;
+        font-weight: 700;
+    }
+    
+    .p-accordion .p-accordion-content {
+        background: none;
+    }
+    
+    .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+        transform: translate(890px, 0px);
+    
+    }
+    .expand-icon {
+        .p-icon {
+            color: white;
+            border-radius: 7px;
+            background: #FF4D4D;
+        }
+    } 
+
+    .product-item {
+        .product-item-content {
+            border: 1px solid var(--surface-d);
+            border-radius: 3px;
+            margin: .3rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    
+        .product-image {
+            width: 50%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+        }
+    }
+
+    .test {
+        .p-icon {
+            color: white;
+            border-radius: 7px;
+            padding: 10px;
+            height: 40px;
+            width: 40px;
+        }
+        .p-icon-wrapper {
+            background: red;
+        }
+    }
+    .p-carousel .p-carousel-indicators { 
+        display: none;
+    }
+
+    .p-tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .p-tag {
+        background: #FF4D4D;
+        color: #ffffff;
+        font-size: 0.75rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        color: black;
+        font-weight: 600;
     }
 }

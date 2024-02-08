@@ -1,5 +1,5 @@
 <div class="background-container pb-8">
-	<img src="../assets/main.svg"
+	<img src="../assets/sign-in-img.png"
 		alt="Background Image"
 		class="background-image">
 	<div class="button-container">
@@ -57,7 +57,9 @@
 								style="color: white;">
 								Password
 							</label>
-							<div style="color: #D83232;">Forgot password?</div>
+							
+							
+							<div style="color: #D83232; cursor: pointer;" (click)="navigateToResetPassword()">Forgot password?</div>
 						</div>
 							<!-- <p-password  [toggleMask]="true"></p-password> -->
 							<input pInputText
@@ -73,7 +75,9 @@
                         <div class="mt-6">
     
                             <div class="text-center" style="color: white;">
-                                Don’t have an account?<span class="ml-2" style="color: #D83232;">Sign up</span>
+                                Don’t have an account?<span class="ml-2" >
+									<a style="color: #D83232; text-decoration: none; cursor: pointer;" (click)="navigate()">Sign up</a>
+									</span>
                             </div>
     
                         </div>

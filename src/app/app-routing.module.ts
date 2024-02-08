@@ -10,6 +10,10 @@ import { CoachesComponent } from './coaches/coaches.component';
 import { StudentNewComponent } from './components/student-new/student-new.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { CoachProfileComponent } from './components/coach-profile/coach-profile.component';
+import { CreateJobPostingComponent } from './components/create-job-posting/create-job-posting.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { AccountProfileComponent } from './components/account-profile/account-profile.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -21,6 +25,10 @@ const routes: Routes = [
   {path: 'student_new', component: StudentNewComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'coach_profile', component: CoachProfileComponent},
+  {path: 'create_job', component: CreateJobPostingComponent},
+  {path: 'forget_password', component: ForgotPasswordComponent},
+  {path: 'payment', component: PaymentComponent},
+  {path: 'profile', component: AccountProfileComponent},
 ];
 
 @NgModule({

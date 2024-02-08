@@ -1,0 +1,35 @@
+:host::ng-deep {
+    .p-dropdown {
+        background: rgb(124, 161, 180);
+        border: 2px solid black;
+        transition: none;
+        border-radius: 10px;
+    }
+    .p-icon {
+        color: black;
+    }
+
+    .textarea {
+        .p-inputtext {
+            color: black;
+            background: rgb(143, 184, 206);
+            width: 100%;
+            border: none;
+        }
+
+    }
+
+    .text-input {
+        .p-inputtext {
+            background: rgb(126, 165, 186);
+            border-radius: 8.4px;
+            height: 48px;
+            width: 100%;
+            border: 2px solid black;
+        }
+    } 
+   
+    .p-inputtext:enabled:focus {
+        box-shadow: none;
+    }
+}

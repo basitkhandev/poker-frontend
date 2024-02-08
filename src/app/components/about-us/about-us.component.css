@@ -92,4 +92,7 @@
     border-radius: 7px;
     background: #FF4D4D;
 }
+.col-6 {
+    padding: 0;
+}
 }

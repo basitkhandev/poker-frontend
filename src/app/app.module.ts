@@ -21,6 +21,15 @@ import { CoachesComponent } from './coaches/coaches.component';
 import { StudentNewComponent } from './components/student-new/student-new.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { CoachProfileComponent } from './components/coach-profile/coach-profile.component';
+import { DividerModule } from 'primeng/divider';
+import { CarouselModule } from 'primeng/carousel';
+import { TagModule } from 'primeng/tag';
+import { CreateJobPostingComponent } from './components/create-job-posting/create-job-posting.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { AccountProfileComponent } from './components/account-profile/account-profile.component';
 
 
 @NgModule({
@@ -36,6 +45,10 @@ import { CoachProfileComponent } from './components/coach-profile/coach-profile.
     StudentNewComponent,
     ChatComponent,
     CoachProfileComponent,
+    CreateJobPostingComponent,
+    ForgotPasswordComponent,
+    PaymentComponent,
+    AccountProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +60,12 @@ import { CoachProfileComponent } from './components/coach-profile/coach-profile.
     CardModule,
     AccordionModule,
     PasswordModule,
-    RatingModule
+    RatingModule,
+    DividerModule,
+    CarouselModule,
+    TagModule,
+    DropdownModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
