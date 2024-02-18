@@ -52,7 +52,7 @@
 
 						<div class="flex flex-column "
 							style="margin-top: -52px;">
-							<h1>Lorem Ipsem</h1>
+							<h1>{{tutorData.name}}</h1>
 							<div>
 								<p-rating [cancel]="false"
 									class="mr-2"></p-rating>
@@ -64,7 +64,7 @@
 
 					<div class="flex justify-content-between">
 						<div>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							{{tutorData.title}}
 						</div>
 						<div class="flex gap-2">
 							<button class="button"
@@ -210,7 +210,7 @@
 						<div class="flex mt-4">
 							<div class="col-2 text-xl font-medium">Games</div>
 							<div class="col-8">
-								No Limit Holdem, Limit Holdem, Pot Limit Omaha, PLO 5, PLO 6, PLO 4 HiLo
+								{{tutorData?.TutorExpertises[0]['games']}}
 							</div>
 						</div>
 						<div style="border: 1px solid black; margin-top: 20px;"></div>
@@ -218,7 +218,7 @@
 						<div class="flex mt-4">
 							<div class="col-2 text-xl font-medium">Game Types</div>
 							<div class="col-8">
-								Online cash, live cash, online SNG, online MTT, live MTT, live SNG, special tourneys(shootout, bounty)
+								{{tutorData?.TutorExpertises[0]['gameTypes']}}
 							</div>
 						</div>
 
@@ -227,7 +227,7 @@
 						<div class="flex mt-4">
 							<div class="col-2 text-xl font-medium">Stakes</div>
 							<div class="col-8">
-								Cash: microstakes to 25/50. tourney up to 3000 buyin
+								{{tutorData?.TutorExpertises[0]['stakes']}}
 							</div>
 						</div>
 

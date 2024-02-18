@@ -46,7 +46,8 @@
             <input pInputText
             id="username"
             placeholder="Lorem ipsum..."
-            aria-describedby="username-help">
+            aria-describedby="username-help"
+			(input)="searchTutors($event)">
                  
         </div>
             <div class="col-2">
@@ -65,108 +66,48 @@
 	</div>
 
 
-    <div class="flex gap-2 mt-6">
-		<div style="width: 399px;
-		background: rgb(143, 184, 206);
-		padding: 50px;
-		border-radius: 10px;">
+<div class="grid mt-2">
+
+    <div class="col-4" *ngFor="let tutor of filteredTutors">
 	
-	
-		<div class="flex gap-2">
-			<div>
-				<img src="../assets/card-align-pic.png" style="width: 120px;
-				height: 120px;
-				border-radius: 50%;" />
-			</div>
-			<div class="mt-8"><p-rating  [cancel]="false"  class="mt-7"></p-rating> <b> 5</b> (6)</div>
-	
-		</div>
+			<div style="width: 399px;
+			background: rgb(143, 184, 206);
+			padding: 50px;
+			border-radius: 10px;" 
+			>
 		
-		<div class="mt-3">
-			<div><b>Lorem ipsum</b></div>
-			Lorem ipsum sit amet, consectetur adipiscing elit.
+		
+			<div class="flex gap-2">
+				<div>
+					<img src="../assets/card-align-pic.png" style="width: 120px;
+					height: 120px;
+					border-radius: 50%;" />
+				</div>
+				<div class="mt-8"><p-rating  [cancel]="false"  class="mt-7"></p-rating> <b> 5</b> (6)</div>
+		
+			</div>
+			
+			<div class="mt-3">
+				<div><b>{{tutor.name}}</b></div>
+				{{tutor.title}}
+			</div>
+		
+			<div  class="mt-4">
+			
+				{{tutor.description}}
+			</div>
+		
+			<div class="mt-4" >
+				<button class="button"
+					class="set-profile-btn" (click)="navigate(tutor.id)">
+					View profiles
+				</button>
+			</div>
 		</div>
-	
-		<div  class="mt-4">
-			Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus. ...
-		</div>
-	
-		<div class="mt-4" >
-			<button class="button"
-				class="set-profile-btn" (click)="navigate()">
-				View profiles
-			</button>
-		</div>
-	</div>
-	  
-	
-	<div style="width: 399px;
-    background: rgb(143, 184, 206);
-    padding: 50px;
-    border-radius: 10px;">
-
-
-	<div class="flex gap-2">
-		<div>
-			<img src="../assets/card-align-pic.png" style="width: 120px;
-			height: 120px;
-			border-radius: 50%;" />
-		</div>
-		<div class="mt-8"><p-rating  [cancel]="false"  class="mt-7"></p-rating> <b> 5</b> (6)</div>
 
 	</div>
 	
-	<div class="mt-3">
-		<div><b>Lorem ipsum</b></div>
-		Lorem ipsum sit amet, consectetur adipiscing elit.
-	</div>
-
-	<div  class="mt-4">
-		Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus. ...
-	</div>
-
-	<div class="mt-4" >
-		<button class="button"
-			class="set-profile-btn" (click)="navigate()">
-			View profiles
-		</button>
-	</div>
 </div>
-
-<div style="width: 399px;
-background: rgb(143, 184, 206);
-padding: 50px;
-border-radius: 10px;">
-
-
-<div class="flex gap-2">
-	<div>
-		<img src="../assets/card-align-pic.png" style="width: 120px;
-		height: 120px;
-		border-radius: 50%;" />
-	</div>
-	<div class="mt-8"><p-rating  [cancel]="false"  class="mt-7"></p-rating> <b> 5</b> (6)</div>
-
-</div>
-
-<div class="mt-3">
-	<div><b>Lorem ipsum</b></div>
-	Lorem ipsum sit amet, consectetur adipiscing elit.
-</div>
-
-<div  class="mt-4">
-	Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus. ...
-</div>
-
-<div class="mt-4" >
-	<button class="button"
-		class="set-profile-btn" (click)="navigate()">
-		View profiles
-	</button>
-</div>
-</div>
-   
-	</div>
 	</div>
 </div>
 

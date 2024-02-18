@@ -11,7 +11,7 @@ export class HomeComponent {
   constructor(private router: Router){}
 
   navigate() {
-    this.router.navigate(['/sign_in'])
+    this.router.navigate(['/signin'])
   }
 
   navigateToSignUp() {

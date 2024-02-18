@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,9 +29,10 @@ import { CreateJobPostingComponent } from './components/create-job-posting/creat
 import { DropdownModule } from 'primeng/dropdown';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { ChangeComponentComponent } from './components/change-password/change-password-component.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { AccountProfileComponent } from './components/account-profile/account-profile.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -49,11 +51,14 @@ import { AccountProfileComponent } from './components/account-profile/account-pr
     ForgotPasswordComponent,
     PaymentComponent,
     AccountProfileComponent,
+    ChangeComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     ButtonModule,
     InputTextModule,
     FormsModule,

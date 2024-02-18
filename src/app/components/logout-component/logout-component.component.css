@@ -4,6 +4,13 @@
         border-radius: 8.4px;
         height: 43px;
     }
+    .p-inputtext:enabled:focus {
+        box-shadow: none;
+        border: none;
+    }
+    .p-inputtext.ng-dirty.ng-invalid {
+        border: none;
+    }
 }
 
 .sign-in-btn {

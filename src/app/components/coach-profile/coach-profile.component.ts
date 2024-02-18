@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HttpApiServiceService } from 'src/app/services/http-api-service.service';
 
 @Component({
   selector: 'app-coach-profile',
@@ -6,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coach-profile.component.css']
 })
 export class CoachProfileComponent implements OnInit{
-
+    tutorData: any = [];
+    paramsId: any;
+    allQuestions: any = [];
   responsiveOptions: any[] | undefined;
   products: any[] = [
     {
@@ -82,6 +86,10 @@ export class CoachProfileComponent implements OnInit{
         rating: 4
     }];
 
+    constructor(
+        private route: ActivatedRoute,
+        private apiService: HttpApiServiceService
+      ) { }
   ngOnInit() {
     this.responsiveOptions = [
       {
@@ -100,6 +108,23 @@ export class CoachProfileComponent implements OnInit{
           numScroll: 1
       }
   ];
+
+  this.route.paramMap.subscribe((params: any) => {
+    this.paramsId = +params?.get('id'); 
+    this.apiService.get('https://cashcart-c3c3869602e3.herokuapp.com/api/tutors/'+  this.paramsId ).subscribe((res: any) => {
+        this.tutorData = res;
+        console.log(res)
+       }) 
+  });
+
+   this.getMessageOfTutuor();
+  }
+
+  getMessageOfTutuor() {
+    this.apiService.get('https://cashcart-c3c3869602e3.herokuapp.com/api/tutor-frequently-questions/'+  this.paramsId).subscribe((res: any) => {
+      this.allQuestions= res;
+      console.log( this.allQuestions)
+      });
   }
 
 }

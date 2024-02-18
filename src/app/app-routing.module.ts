@@ -14,21 +14,42 @@ import { CreateJobPostingComponent } from './components/create-job-posting/creat
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { AccountProfileComponent } from './components/account-profile/account-profile.component';
+import { ChangeComponentComponent } from './components/change-password/change-password-component.component';
+import { AuthGuard } from './services/auth.guard';
+import { NotAuthenticatedGuard } from './services/not-auth.guard';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'about', component: AboutUsComponent},
-  {path: 'sign_in', component: SignInComponent},
+  { path: 'signin', component: SignInComponent , canActivate: [NotAuthenticatedGuard]},
+  { path: 'dashboard', component: AboutUsComponent, canActivate: [AuthGuard] },
+  {path: '', component: HomeComponent, canActivate: [AuthGuard]},
+  // Add other routes here
+
   {path: 'logout', component: LogoutComponentComponent},
-  {path: 'tutor', component: FindTutorComponent},
-  {path: 'coaches', component: CoachesComponent},
-  {path: 'student_new', component: StudentNewComponent},
-  {path: 'chat', component: ChatComponent},
-  {path: 'coach_profile', component: CoachProfileComponent},
-  {path: 'create_job', component: CreateJobPostingComponent},
-  {path: 'forget_password', component: ForgotPasswordComponent},
-  {path: 'payment', component: PaymentComponent},
-  {path: 'profile', component: AccountProfileComponent},
+  {path: 'tutor', component: FindTutorComponent, canActivate: [AuthGuard]},
+  {path: 'coaches', component: CoachesComponent, canActivate: [AuthGuard]},
+  {path: 'student_new', component: StudentNewComponent, canActivate: [AuthGuard]},
+  {path: 'chat', component: ChatComponent,  canActivate: [AuthGuard]},
+  {path: 'coach_profile/:id', component: CoachProfileComponent, canActivate: [AuthGuard]},
+  {path: 'create_job', component: CreateJobPostingComponent, canActivate: [AuthGuard]},
+  {path: 'change_password', component: ForgotPasswordComponent, canActivate: [AuthGuard]},
+  {path: 'forget_password', component: ChangeComponentComponent, canActivate: [AuthGuard]},
+  {path: 'payment', component: PaymentComponent, canActivate: [AuthGuard]},
+  {path: 'profile', component: AccountProfileComponent, canActivate: [AuthGuard]},
+
+  // {path: '', component: HomeComponent},
+  // {path: 'about', component: AboutUsComponent},
+  // {path: 'sign_in', component: SignInComponent},
+  // {path: 'logout', component: LogoutComponentComponent},
+  // {path: 'tutor', component: FindTutorComponent},
+  // {path: 'coaches', component: CoachesComponent},
+  // {path: 'student_new', component: StudentNewComponent},
+  // {path: 'chat', component: ChatComponent},
+  // {path: 'coach_profile/:id', component: CoachProfileComponent, pathMatch: 'full'},
+  // {path: 'create_job', component: CreateJobPostingComponent},
+  // {path: 'change_password', component: ForgotPasswordComponent},
+  // {path: 'forget_password', component: ChangeComponentComponent},
+  // {path: 'payment', component: PaymentComponent},
+  // {path: 'profile', component: AccountProfileComponent},
 ];
 
 @NgModule({

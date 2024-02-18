@@ -40,6 +40,7 @@
 					</div>
 
 					<div class="p-4 flex flex-column gap-3">
+						<form [formGroup]="loginForm">
 						<div class="flex flex-column gap-2">
 							<label for="username"
 								style="color: white;">
@@ -47,6 +48,7 @@
 							</label>
 							<input pInputText
 								id="username"
+								formControlName="email"
 								placeholder="name@example.com"
 								aria-describedby="username-help">
 
@@ -65,13 +67,15 @@
 							<input pInputText
 								id="username"
 								type="password"
+								formControlName="password"
 								placeholder="Password"
 								aria-describedby="username-help">
 						</div>
-						<button class="button"
-							class="main-btn mt-3">
+						<button class="button" style="width: 100%;"
+							class="main-btn mt-3" (click)="submitLoginForm()">
 							Log in
 						</button>
+					</form>
                         <div class="mt-6">
     
                             <div class="text-center" style="color: white;">
